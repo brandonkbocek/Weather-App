@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', (e) =>  {
         response.json().then((data) => {
             if(data.error){
                 messageTwo.textContent = 'Unable to find the location. Please try another search.'
-                return console.log('error!!!')
+                return console.log('error!')
             }
             messageOne.textContent = data.location
             messageTwo.textContent = data.forecast
